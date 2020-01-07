@@ -10,36 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var ButtonMan: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print("This is a test another test")
+        //view.setGradientBackground(colorOne: Colors.aquamarine, colorTwo: Colors.blue)
+        view.setCrazyBackground(colorOne: Colors.black, colorTwo: Colors.orange, colorThree: Colors.white ,colorFour: Colors.blue , colorFive: Colors.brightOrange)
+        ButtonMan.setGradientBackground(colorOne: Colors.blue, colorTwo: Colors.aquamarineV2)
     }
-    @IBDesignable
-    class GradientView: UIView {
-        @IBInspectable var firstColor: UIColor = UIColor.clear {
-            didSet {
-                updateView()
-            }
-        }
-        @IBInspectable var secondColor: UIColor = UIColor.clear {
-            didSet {
-                updateView()
-            }
-        }
-        
-        func updateView() {
-        }
-        override class var layerClass: AnyClass {
-            get {
-                return CAGradientLayer.self
-            }
-        }
-        func uspdateView() {
-            let layer = self.layer as! CAGradientLayer
-            layer.colors = [firstColor, secondColor].map{$0.cgColor}
-        }
-    }
-    
 }
 
