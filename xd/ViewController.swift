@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        //view.setGradientBackground(colorOne: Colors.aquamarine, colorTwo: Colors.blue)
-        view.setCrazyBackground(colorOne: Colors.black, colorTwo: Colors.orange, colorThree: Colors.white ,colorFour: Colors.blue , colorFive: Colors.brightOrange)
+        view.setGradientBackground(colorOne: Colors.aquamarine, colorTwo: Colors.blue)
+        
         ButtonMan.setGradientBackground(colorOne: Colors.blue, colorTwo: Colors.aquamarineV2)
     }
 }
