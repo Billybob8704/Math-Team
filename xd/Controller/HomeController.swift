@@ -19,7 +19,6 @@ class HomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.setGradientBackground(colorOne: Colors.aquamarine, colorTwo: Colors.blue)
-        ButtonMan.setGradientBackground(colorOne: Colors.blue, colorTwo: Colors.aquamarineV2)
         configureNavigationBar()
     }
     

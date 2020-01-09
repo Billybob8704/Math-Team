@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		173833C023C7639200FF097B /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173833BF23C7639200FF097B /* MenuOptionCell.swift */; };
+		173833C223C7663000FF097B /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173833C123C7663000FF097B /* MenuOption.swift */; };
 		179A743E23C4BF8D00CA43F9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179A743D23C4BF8D00CA43F9 /* UIView+Extension.swift */; };
 		179A744023C4C0FB00CA43F9 /* ConstantColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179A743F23C4C0FB00CA43F9 /* ConstantColors.swift */; };
 		17D4C00C23A3CCB300D899DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D4C00B23A3CCB300D899DE /* AppDelegate.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		173833BF23C7639200FF097B /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
+		173833C123C7663000FF097B /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
 		179A743D23C4BF8D00CA43F9 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		179A743F23C4C0FB00CA43F9 /* ConstantColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantColors.swift; sourceTree = "<group>"; };
 		17D4C00823A3CCB300D899DE /* xd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xd.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +157,7 @@
 		17E73B9623C61154008E986B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				173833BF23C7639200FF097B /* MenuOptionCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 		17E73B9723C61157008E986B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				173833C123C7663000FF097B /* MenuOption.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,7 +313,9 @@
 				17E73B9A23C611FB008E986B /* ContainerController.swift in Sources */,
 				17E73BA023C618AE008E986B /* Protocols.swift in Sources */,
 				17E73B9E23C61214008E986B /* HomeController.swift in Sources */,
+				173833C223C7663000FF097B /* MenuOption.swift in Sources */,
 				17D4C00C23A3CCB300D899DE /* AppDelegate.swift in Sources */,
+				173833C023C7639200FF097B /* MenuOptionCell.swift in Sources */,
 				17E73B9C23C61206008E986B /* MenuController.swift in Sources */,
 				179A744023C4C0FB00CA43F9 /* ConstantColors.swift in Sources */,
 			);
