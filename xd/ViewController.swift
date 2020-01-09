@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.setGradientBackground(colorOne: Colors.aquamarine, colorTwo: Colors.blue)
+
         ButtonMan.setGradientBackground(colorOne: Colors.blue, colorTwo: Colors.aquamarineV2)
     }
 }
