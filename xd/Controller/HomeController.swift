@@ -18,9 +18,14 @@ class HomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        func ButtonTest(_ sender: Any){
+        
+        }
+        
         view.setGradientBackground(colorOne: Colors.aquamarine, colorTwo: Colors.blue)
         configureNavigationBar()
     }
+    
     
     // MARK: - Handlers
     
