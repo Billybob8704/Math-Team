@@ -2,7 +2,7 @@
 //  MenuController.swift
 //  xd
 //
-//  Created by FOREMAN, CHRISTIAN on 1/8/20.
+//  Created by DANICH, EVAN on 1/8/20.
 //  Copyright © 2020 district196.org. All rights reserved.
 //
 
@@ -47,7 +47,7 @@ class MenuController: UIViewController {
 
 extension MenuController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

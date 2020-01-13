@@ -2,7 +2,7 @@
 //  ContainerController.swift
 //  xd
 //
-//  Created by FOREMAN, CHRISTIAN on 1/8/20.
+//  Created by DANICH, EVAN on 1/8/20.
 //  Copyright © 2020 district196.org. All rights reserved.
 //
 
@@ -82,13 +82,15 @@ class ContainerController: UIViewController {
     func didSelectMenuOption(menuOption: MenuOption) {
         switch menuOption {
         case .Profile:
-            print("Show profile")
-        case .Inbox:
-            print("Show Inbox")
-        case .Notifications:
-            print("Show Notifications")
-        case .Settings:
-            print("Show Settings")
+            print("Show Profile")
+        case .Study:
+            print("Show Study")
+        case .Practice:
+            print("Show Practice")
+        case .BasicInfo:
+            print("Show BasicInfo")
+        case .MTC:
+            print("Show MTC")
         }
     }
     
