@@ -18,9 +18,15 @@ class HomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        func ButtonTest(_ sender: Any){
         
-        }
+        let button = UIButton(type: .system) // let preferred over var here
+        button.frame = CGRect(x: self.view.frame.size.width - 60, y: 60, width: 200, height: 50)
+        button.backgroundColor = UIColor.green
+        button.setTitle("Button", for: UIControl.State.normal)
+        button.addTarget(self, action: "Action:", for: UIControl.Event.touchUpInside)
+        button.setGradientBackground(colorOne: Colors.aquamarine, colorTwo: Colors.blue)
+        self.view.addSubview(button)
+        
         
         view.setGradientBackground(colorOne: Colors.aquamarine, colorTwo: Colors.blue)
         configureNavigationBar()
