@@ -18,20 +18,37 @@ class HomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+
         let button = UIButton(type: .system) // let preferred over var here
         button.frame = CGRect(x: self.view.frame.size.width - 60, y: 60, width: 200, height: 50)
-        button.backgroundColor = UIColor.green
         button.setTitle("Button", for: UIControl.State.normal)
-        button.addTarget(self, action: "Action:", for: UIControl.Event.touchUpInside)
-        button.setGradientBackground(colorOne: Colors.aquamarine, colorTwo: Colors.blue)
+        button.addTarget(self, action: #selector(HomeController.sampleButtonClicked), for: .touchUpInside)
         self.view.addSubview(button)
-        
+        button.setGradientBackground(colorOne: Colors.joeyL, colorTwo: Colors.joeyR)
+        self.view.addSubview(button)
+        button.translatesAutoresizingMaskIntoConstraints = false
         
         view.setGradientBackground(colorOne: Colors.aquamarine, colorTwo: Colors.blue)
         configureNavigationBar()
+        
+        //To anchor above the tab bar on the bottom of the screen:
+        let bottomButtonConstraint = button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20)
+        
+        //edge of the screen in InterfaceBuilder:
+        let margins = view.layoutMarginsGuide
+        let leadingButtonConstraint = button.leadingAnchor.constraint(equalTo: margins.leadingAnchor)
+        
+        bottomButtonConstraint.isActive = true
+        leadingButtonConstraint.isActive = true
     }
-    
+    @objc func sampleButtonClicked(){
+        
+        print("sample Button Clicked")
+        
+    }
     
     // MARK: - Handlers
     

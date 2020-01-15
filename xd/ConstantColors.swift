@@ -24,6 +24,8 @@ struct Colors {
     static let awwwwwwwww       = UIColor(red: 0.0/255.0, green: 247.0/255.0, blue: 255.0/255.0, alpha: 1.0)
     static let aquamarine       = UIColor(red: 0.0/255.0, green: 247.0/255.0, blue: 200.0/255.0, alpha: 1.0)
     static let aquamarineV2     = UIColor(red: 0.0/255.0, green: 247.0/255.0, blue: 238.0/255.0, alpha: 1.0)
-    
-    
+    static let joeyL            = UIColor(red: 194.2/255.0, green: 16.69/255.0, blue: 182.0/255.0, alpha: 1.0)
+    static let joeyR            = UIColor(red: 120.0/255.0, green: 5.0/255.0, blue: 120.0/255.0, alpha: 1.0)
+    static let ChristianF       = UIColor(red: 87.0/255.0, green: 221.0/255.0, blue: 120.0/255.0, alpha: 1.0)
+
 }
