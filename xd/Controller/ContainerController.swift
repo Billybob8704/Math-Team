@@ -14,6 +14,7 @@ class ContainerController: UIViewController {
     
     var menuController: MenuController!
     var centerController: UIViewController!
+    var profileController: UIViewController!
     var isExpanded = false
     
     // MARK: - Init
@@ -46,6 +47,7 @@ class ContainerController: UIViewController {
         addChild(centerController)
         centerController.didMove(toParent: self)
     }
+   
     
     func configureMenuController() {
         if menuController == nil {
@@ -86,9 +88,10 @@ class ContainerController: UIViewController {
         case .Study:
             print("Show Study")
         case .Practice:
-            print("Show Practice")
+            let controller = PracticeController()
+            present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
         case .BasicInfo:
-            print("Show BasicInfo")
+            print("Show Basic Info")
         case .MTC:
             print("Show MTC")
         }
