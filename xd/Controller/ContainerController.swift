@@ -47,6 +47,16 @@ class ContainerController: UIViewController {
         addChild(centerController)
         centerController.didMove(toParent: self)
     }
+    
+    func configurePracticeController() {
+        let practiceController = PracticeController()
+        practiceController.delegate = self
+        centerController = UINavigationController(rootViewController: practiceController)
+        
+        view.addSubview(centerController.view)
+        addChild(centerController)
+        centerController.didMove(toParent: self)
+    }
    
     
     func configureMenuController() {
@@ -90,6 +100,7 @@ class ContainerController: UIViewController {
         case .Practice:
             let controller = PracticeController()
             present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
+            configurePracticeController()
         case .BasicInfo:
             print("Show Basic Info")
         case .MTC:
